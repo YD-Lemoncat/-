@@ -1,2 +1,5 @@
 # -
-实现论文《Joint Ranging and Synchronization for an Anchorless Network of Mobile Nodes》中的实验复现
+**在此项目中实现了使用python对论文《Joint Ranging and Synchronization for an Anchorless Network of Mobile Nodes》中的实验复现**
+论文的创新点在于采用“全局最小二乘法（GLS）”这一算法对节点之间的距离进行估算，以及对不同节点的时间进行偏移补偿实现时钟同步，使用了均方误差作为算法效果的衡量指标；
+本项目通过python3实现了对论文中算法实验的复现，并绘制出在4个节点下误差随节点之间两两通信次数增加的效果曲线；
+同时还绘制了通过“局部最小二乘法（LCLS）”计算得到的均方误差以及CRAMER RAO下界作为算法效果的比较对象，其中CRAMER RAO下界描述了在给定条件下，任何无偏估计量的方差的下界。换句话说，CRLB 提供了一个理论上的极限
